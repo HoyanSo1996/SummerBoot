@@ -19,7 +19,7 @@ public class SummerApplication {
             tomcat.setPort(9090);
             // 将 Tomcat 和 Spring web 容器进行关联
             // (1) 设置 ContextPath
-            // (2) 指定 Spring web 项目的位置
+            // (2) 指定 当前程序打包后要部署的位置
             tomcat.addWebapp("/SummerBoot", "C:\\WorkSpace\\Practice\\JavaCode\\SummerBoot");
             // 启动 Tomcat
             tomcat.start();
